@@ -1,6 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackPwaManifest = require("webpack-pwa-manifest");
+const { GenerateSW } = require("workbox-webpack-plugin");
+// SW = a.k.a Service Worker
 
 module.exports = {
   entry: "./src/index.js",
@@ -36,6 +38,9 @@ module.exports = {
           sizes: [96, 128, 192, 256, 384, 512]
         }
       ]
+    }),
+    new GenerateSW({
+      include: [/\.html$/, /\.js$/]
     })
   ]
 };
