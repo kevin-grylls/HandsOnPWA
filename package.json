@@ -1,0 +1,36 @@
+{
+  "name": "pwa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kevin You",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "office-ui-fabric-react": "^7.76.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-numeric-separator": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.7",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-pwa-manifest": "^4.1.1"
+  }
+}
